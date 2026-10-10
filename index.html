@@ -3,26 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#1f8a8f">
+<meta name="theme-color" content="#6e3f72">
 <style>html{color-scheme:light}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Places in My City</title>
+<title>Food and Favourite Meals</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap">
 <style>
 /* Layout: phone-first single lesson flow — top progress bar, one exercise, bottom action sheet */
 :root{
   --bg:#ffffff; --ink:#1f3540; --muted:#6c8088; --line:#dfe8e7; --tile:#f5f9f8;
-  --accent:#1f8a8f; --accent-d:#15666a; --ok:#48b85a; --ok-d:#358a43; --ok-bg:#e3f6e5;
+  --accent:#6e3f72; --accent-d:#4f2b52; --ok:#48b85a; --ok-d:#358a43; --ok-bg:#e3f6e5;
   --bad:#e5534b; --bad-d:#b23a33; --bad-bg:#fde7e5; --sun:#f4a72c;
   --font:"Nunito", "Segoe UI", system-ui, sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#12202a; --ink:#e6f0ef; --muted:#93a9b0; --line:#2b3f4a; --tile:#1a2c37;
-  --accent:#3fb7bb; --accent-d:#2a8a8d; --ok:#5ccb6c; --ok-d:#3f9a4c; --ok-bg:#183a24;
+  --accent:#a76aab; --accent-d:#7a4a7e; --ok:#5ccb6c; --ok-d:#3f9a4c; --ok-bg:#183a24;
   --bad:#f0726a; --bad-d:#b9483f; --bad-bg:#3d1f1f; --sun:#f7b84a; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#12202a; --ink:#e6f0ef; --muted:#93a9b0; --line:#2b3f4a; --tile:#1a2c37;
-  --accent:#3fb7bb; --accent-d:#2a8a8d; --ok:#5ccb6c; --ok-d:#3f9a4c; --ok-bg:#183a24;
+  --accent:#a76aab; --accent-d:#7a4a7e; --ok:#5ccb6c; --ok-d:#3f9a4c; --ok-bg:#183a24;
   --bad:#f0726a; --bad-d:#b9483f; --bad-bg:#3d1f1f; --sun:#f7b84a; color-scheme:dark}
 *{box-sizing:border-box}
 html,body{height:100%}
@@ -109,53 +109,53 @@ input.type{width:100%;font:inherit;font-size:22px;font-weight:800;padding:14px 1
 
 <script>
 const RAW=[
-["hospital","haaspitel","shifoxona","The hospital is nearby.","Shifoxona yaqinda.","hospital"],
-["university","yuuneverseti","universitet","She studies at university.","U universitetda o‘qiydi.","university"],
-["library","laybrerii","kutubxona","I borrow books from the library.","Men kutubxonadan kitob olaman.","library"],
-["museum","myuziiem","muzey","We visited the museum.","Biz muzeyga bordik.","museum"],
-["cinema","sineme","kinoteatr","Let's go to the cinema.","Kinoga boraylik.","cinema"],
-["theatre","thiieter","teatr","There is a theatre downtown.","Shahar markazida teatr bor.","theatre"],
-["restaurant","resteraant","restoran","We had dinner at a restaurant.","Biz restoranda kechki ovqat qildik.","restaurant"],
-["café","kafey","kafe","I meet friends at a café.","Men do‘stlarim bilan kafeda uchrashaman.","café"],
-["supermarket","suupermaarkit","supermarket","I buy food at the supermarket.","Men supermarketdan oziq-ovqat olaman.","supermarket"],
-["market","maarket","bozor","My mother goes to the market.","Onam bozorga boradi.","market"],
-["bank","bangk","bank","The bank is next to the café.","Bank kafening yonida.","bank"],
-["pharmacy","faarmesi","dorixona","I bought medicine at the pharmacy.","Men dorixonadan dori sotib oldim.","pharmacy"],
-["station","steyshen","bekat / vokzal","The train station is far away.","Vokzal uzoqda.","station"],
-["airport","erport","aeroport","We went to the airport.","Biz aeroportga bordik.","airport"],
-["go to the cinema","gou tu dhe sineme","kinoga bormoq","We go to the cinema on Friday.","Biz juma kuni kinoga boramiz.","go to the cinema"],
-["visit a museum","vizit e myuziiem","muzeyga tashrif buyurmoq","I visit museums when I travel.","Sayohat qilganimda muzeylarga boraman.","visit museums"],
-["borrow a book","baarou e buk","kitob olmoq (vaqtincha)","I borrowed a book from the library.","Men kutubxonadan kitob oldim.","borrowed a book"],
-["buy groceries","bay grouseriz","oziq-ovqat xarid qilmoq","I buy groceries every week.","Men har hafta oziq-ovqat xarid qilaman.","buy groceries"],
-["go to the market","gou tu dhe maarket","bozorga bormoq","We go to the market on Sunday.","Biz yakshanba kuni bozorga boramiz.","go to the market"],
-["meet at a café","miit at e kafey","kafeda uchrashmoq","We meet at a café.","Biz kafeda uchrashamiz.","meet at a café"],
-["wait for a bus","weyt for e bas","avtobus kutmoq","I wait for the bus here.","Men avtobusni shu yerda kutaman.","wait for the bus"],
-["find a place","faynd e pleys","joy topmoq","We found a quiet place.","Biz tinch joy topdik.","found"],
-["enter","enter","kirmoq","Please enter the building.","Iltimos, binoga kiring.","enter"],
-["leave","liiv","chiqib ketmoq","We left the museum at five.","Biz muzeydan soat beshda chiqdik.","left"],
-["public","pablik","jamoatga oid","It is a public library.","Bu jamoat kutubxonasi.","public"],
-["private","prayvet","xususiy","It is a private hospital.","Bu xususiy shifoxona.","private"],
-["local","loukel","mahalliy","I like local restaurants.","Menga mahalliy restoranlar yoqadi.","local"],
-["central","sentrel","markaziy","It is in a central area.","U markaziy hududda.","central"],
-["nearby","nirbay","yaqin(da)","There is a pharmacy nearby.","Yaqin atrofda dorixona bor.","nearby"],
-["expensive","ikspensiv","qimmat","Restaurants here are expensive.","Bu yerdagi restoranlar qimmat.","expensive"],
-["cheap","chiip","arzon","This market is cheap.","Bu bozor arzon.","cheap"],
-["interesting","intresting","qiziqarli","The museum is interesting.","Muzey qiziqarli.","interesting"],
-["boring","boring","zerikarli","The place is boring.","Bu joy zerikarli.","boring"],
-["popular","paapyeler","mashhur","This café is popular.","Bu kafe mashhur.","popular"],
-["on the outskirts of","on dhi autskerts ov","…ning chekka qismida","They live on the outskirts of the city.","Ular shaharning chekkasida yashaydi.","on the outskirts of"],
-["in the city centre","in dhe siti senter","shahar markazida","There are many shops in the city centre.","Shahar markazida ko‘p do‘konlar bor.","in the city centre"],
-["within walking distance","widhin woking distens","piyoda boriladigan masofada","The supermarket is within walking distance.","Supermarketga piyoda borsa bo‘ladi.","within walking distance"],
-["around the corner","eraund dhe korner","juda yaqin, burchak ortida","There's a café around the corner.","Burchak ortida kafe bor.","around the corner"],
-["next door to","nekst dor tu","yonidagi binoda","The pharmacy is next door to the bank.","Dorixona bankning yonidagi binoda.","next door to"],
-["opposite the station","opezit dhe steyshen","vokzal ro‘parasida","The café is opposite the station.","Kafe vokzal ro‘parasida.","opposite the station"]];
+["food","fuud","ovqat","I love Uzbek food.","Men o‘zbek ovqatini yaxshi ko‘raman.","food"],
+["meal","miil","taom / ovqatlanish","Breakfast is my favourite meal.","Nonushta mening eng sevimli taomim.","meal"],
+["breakfast","brekfest","nonushta","I have breakfast at home.","Men uyda nonushta qilaman.","breakfast"],
+["lunch","lanch","tushlik","We have lunch at one.","Biz soat birda tushlik qilamiz.","lunch"],
+["dinner","diner","kechki ovqat","Dinner is ready.","Kechki ovqat tayyor.","Dinner"],
+["bread","bred","non","I eat bread with soup.","Men sho‘rvani non bilan yeyman.","bread"],
+["rice","rays","guruch","We often eat rice.","Biz tez-tez guruch yeymiz.","rice"],
+["meat","miit","go‘sht","I don't eat much meat.","Men ko‘p go‘sht yemayman.","meat"],
+["chicken","chiken","tovuq go‘shti","I like chicken.","Menga tovuq go‘shti yoqadi.","chicken"],
+["egg","eg","tuxum","I have an egg for breakfast.","Nonushtaga bitta tuxum yeyman.","egg"],
+["cheese","chiiz","pishloq","I like cheese.","Menga pishloq yoqadi.","cheese"],
+["fruit","fruut","meva","Fruit is healthy.","Meva foydali.","Fruit"],
+["vegetable","vejtebel","sabzavot","Eat more vegetables.","Ko‘proq sabzavot yeng.","vegetables"],
+["drink","dringk","ichimlik","What would you like to drink?","Nima ichishni xohlaysiz?","drink"],
+["have breakfast","hav brekfest","nonushta qilmoq","I have breakfast at eight.","Men soat sakkizda nonushta qilaman.","have breakfast"],
+["have lunch","hav lanch","tushlik qilmoq","We have lunch together.","Biz birga tushlik qilamiz.","have lunch"],
+["have dinner","hav diner","kechki ovqat qilmoq","We have dinner at seven.","Biz soat yettida kechki ovqat qilamiz.","have dinner"],
+["eat out","iit aut","tashqarida ovqatlanmoq","We eat out on Fridays.","Biz juma kunlari tashqarida ovqatlanamiz.","eat out"],
+["order food","order fuud","ovqat buyurtma qilmoq","We ordered food online.","Biz onlayn ovqat buyurtma qildik.","ordered food"],
+["have a meal","hav e miil","ovqatlanmoq","Let's have a meal together.","Keling, birga ovqatlanaylik.","have a meal"],
+["eat","iit","yemoq","I eat fruit every day.","Men har kuni meva yeyman.","eat"],
+["drink","dringk","ichmoq","I drink a lot of water.","Men ko‘p suv ichaman.","drink"],
+["taste","teyst","ta'mi kelmoq","This soup tastes good.","Bu sho‘rvaning ta'mi yaxshi.","tastes"],
+["prefer","prefer","afzal ko‘rmoq","I prefer rice to bread.","Men guruchni nondan afzal ko‘raman.","prefer"],
+["delicious","dilishes","mazali","The food is delicious.","Ovqat mazali.","delicious"],
+["tasty","teysti","mazali","This cake is tasty.","Bu tort mazali.","tasty"],
+["sweet","swiit","shirin","The tea is sweet.","Choy shirin.","sweet"],
+["salty","solti","sho‘r","The soup is too salty.","Sho‘rva juda sho‘r.","salty"],
+["spicy","spaysi","achchiq","I like spicy food.","Menga achchiq ovqat yoqadi.","spicy"],
+["fresh","fresh","yangi / toza","The vegetables are fresh.","Sabzavotlar yangi.","fresh"],
+["healthy","helthi","sog‘lom","Salad is healthy.","Salat sog‘lom ovqat.","healthy"],
+["unhealthy","enhelthi","nosog‘lom","Fast food can be unhealthy.","Fast fud nosog‘lom bo‘lishi mumkin.","unhealthy"],
+["hungry","hanggri","och","I'm hungry.","Men ochman.","hungry"],
+["full","ful","to‘q","I'm full now.","Men hozir to‘qman.","full"],
+["have a sweet tooth","hav e swiit tuth","shirinlikni juda yaxshi ko‘rmoq","I have a sweet tooth.","Men shirinlikni juda yaxshi ko‘raman.","have a sweet tooth"],
+["be full of flavour","bi ful ov fleyver","mazasi juda boy bo‘lmoq","The soup is full of flavour.","Sho‘rvaning mazasi juda boy.","full of flavour"],
+["have a bite to eat","hav e bayt tu iit","biror narsa yeb olmoq","Let's have a bite to eat.","Keling, biror narsa yeb olaylik.","have a bite to eat"],
+["grab something to eat","grab samthing tu iit","tezda biror narsa yeb olmoq","I'll grab something to eat.","Men tezda biror narsa yeb olaman.","grab something to eat"],
+["cut down on sugar","kat daun on shuger","shakarni kamaytirmoq","I'm trying to cut down on sugar.","Men shakarni kamaytirishga harakat qilyapman.","cut down on sugar"],
+["eat a balanced diet","iit e balenst dayet","muvozanatli ovqatlanmoq","It's important to eat a balanced diet.","Muvozanatli ovqatlanish muhim.","eat a balanced diet"]];
 const W=RAW.map((a,i)=>({id:i,en:a[0],pr:a[1],uz:a[2],ex:a[3],exUz:a[4],gap:a[5]}));
-const ALT={"theatre":["theater"],"in the city centre":["in the city center"],"café":["cafe"],"meet at a café":["meet at a cafe"]};
+const ALT={"be full of flavour":["be full of flavor","full of flavour","full of flavor"]};
 
 /* state: score 0..5 per word (-1 = not introduced yet) */
 let S={xp:0,m:{},slow:false,lessons:0};
-try{const s=JSON.parse(localStorage.getItem("pimc2")||"null");if(s)S=Object.assign(S,s)}catch(e){}
-const save=()=>{try{localStorage.setItem("pimc2",JSON.stringify(S))}catch(e){}};
+try{const s=JSON.parse(localStorage.getItem("food10")||"null");if(s)S=Object.assign(S,s)}catch(e){}
+const save=()=>{try{localStorage.setItem("food10",JSON.stringify(S))}catch(e){}};
 const sc=w=>S.m[w.id]===undefined?-1:S.m[w.id];
 
 const $=s=>document.querySelector(s);
@@ -175,8 +175,8 @@ function home(){
   const learned=W.filter(w=>sc(w)>=3).length, seen=W.filter(w=>sc(w)>=0).length;
   const C=2*Math.PI*64, off=C*(1-learned/40);
   $("#app").innerHTML=`<div class="home">
-    <div class="muted" style="font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:13px">Lesson 9 · 40 so‘z</div>
-    <h1>Places in My City</h1>
+    <div class="muted" style="font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:13px">Lesson 10 · 40 so‘z</div>
+    <h1>Food &amp; Favourite Meals</h1>
     <div class="ring"><svg viewBox="0 0 150 150"><circle cx="75" cy="75" r="64" fill="none" stroke="var(--line)" stroke-width="14"/><circle cx="75" cy="75" r="64" fill="none" stroke="var(--ok)" stroke-width="14" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${off}"/></svg><b>${learned}<small>/ 40 yodlandi</small></b></div>
     <div class="hstats"><span>XP ${S.xp}</span><span>Ko‘rilgan ${seen}/40</span><span>Darslar ${S.lessons}</span></div>
     <button class="cta" id="start" style="font-size:20px;padding:18px">${S.lessons?"Davom etish":"Boshlash"}</button>
@@ -239,7 +239,7 @@ function result(ok,w,note){
     <button class="cta ${ok?"":"red"}" id="cta">Davom etish</button>`;
   $("#cta").onclick=next;$("#cta").focus();say(w.en);
 }
-function distract(w,n){return shuf([w,...shuf(W.filter(x=>x!==w)).slice(0,n)])}
+function distract(w,n){return shuf([w,...shuf(W.filter(x=>x!==w&&x.uz!==w.uz&&x.en!==w.en)).slice(0,n)])}
 function choice({w,kind,prompt,choices,label,note}){
   frame(`<div class="kind">${kind}</div>${prompt}<div class="opts">${choices.map((c,i)=>`<button class="opt" data-i="${i}">${esc(label(c))}</button>`).join("")}</div>`);
   sheetBtn("Javobni tanlang","grey",()=>{});
@@ -285,7 +285,7 @@ const ex={
    const inp=$("#ans");setTimeout(()=>inp.focus(),50);let hinted=false;
    $("#hint").onclick=()=>{hinted=true;inp.value=w.en[0];inp.focus()};
    const check=()=>{const v=norm(inp.value);if(!v){inp.classList.add("shake");setTimeout(()=>inp.classList.remove("shake"),300);return}
-     inp.disabled=true;const ok=[w.en,...(ALT[w.en]||[])].some(a=>norm(a)===v);bump(w,ok);result(ok,w,ok?esc(w.ex):"Siz yozdingiz: "+esc(inp.value))};
+     inp.disabled=true;const ok=[w.en,...(ALT[w.en]||[]),...(listenMode?[]:W.filter(x=>x.uz===w.uz).map(x=>x.en))].some(a=>norm(a)===v);bump(w,ok);result(ok,w,ok?esc(w.ex):"Siz yozdingiz: "+esc(inp.value))};
    sheetBtn("Tekshirish","",check);
    inp.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();if(!inp.disabled)check()}};
  },
@@ -302,7 +302,7 @@ const ex={
    });
  },
  match(){
-   const ws=shuf(L.pool).slice(0,Math.min(5,L.pool.length));
+   const ws=[];for(const x of shuf(L.pool)){if(ws.length<5&&!ws.some(y=>y.en===x.en||y.uz===x.uz))ws.push(x)}
    const A=shuf(ws),B=shuf(ws);let sel=null,left=ws.length;
    frame(`<div class="kind">Juftlarini toping</div><div class="grid2">${A.map((w,i)=>`<button class="opt" data-s="A" data-id="${w.id}">${esc(w.en)}</button><button class="opt" data-s="B" data-id="${B[i].id}">${esc(B[i].uz)}</button>`).join("")}</div>`);
    sheetBtn("Juftlang","grey",()=>{});

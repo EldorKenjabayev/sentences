@@ -1,4 +1,4 @@
-# Places in My City — Lesson 9
+# Food & Favourite Meals — Lesson 10
 
 Ingliz tili so‘zlarini Duolingo uslubida o‘rganish uchun bitta sahifali ilova (40 so‘z).
 Mashqlar: yangi so‘z, tinglash, tarjimani tanlash, gapni to‘ldirish, juftlash, yozish, gapirish.
